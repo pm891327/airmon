@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.top-bar {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    border-bottom: 1px solid #eee;
+}
+
+
+
+
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.intro {
+    height: 450px;
+    background: url("https://img.freepik.com/fotos-premium/codigo-binario-negro-verde-matriz-digital-futurista_971394-455.jpg?w=2000") center/cover;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    color: white;
+}
+
+.intro-content {
+    max-width: 500px;
+}
+
+.intro h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    display: inline-block;
+    margin-top: 30px;   
+    padding: 14px 28px;
+    background: #c62817;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 30px; 
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    background: black;
+    transform: translateY(-2px);
+}
+
+.offers {
+    background: #c62817;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: red;
+    color: white;
+    padding: 5px 8px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.badge.new {
+    background: blue;
+}
+
+.price {
+    color: red;
+    margin: 10px 0;
+}
+
+.price span {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+}
+
+.card button {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.featured {
+    padding: 50px;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}

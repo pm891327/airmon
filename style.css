@@ -5,13 +5,35 @@
     font-family: Arial, sans-serif;
 }
 
-.top-bar {
-    background: black;
-    color: white;
-    text-align: center;
-    padding: 8px;
-    font-size: 14px;
+:root{
+    --color-fondo: #080B12;
+    --color-fondo-secundario: #0F141D;
+    --color-borde: #263241;
+    
+    --color-texto: #E6EDF3;
+    --color-texto-secundario: #8B98A8;
+
+    --color-primario: #00E676;
+    --color-primario-hover: #39FF88;
+
+    --color-acento: #00C2FF;
+
+      /* =========================
+     GRADIENTES generdos con IA
+     ========================= */
+
+  --gradient-cyber:
+    linear-gradient(135deg, #00E676 0%, #00C2FF 100%);
+
+  --gradient-background:
+    radial-gradient(
+      circle at top right,
+      rgba(0, 230, 118, 0.08),
+      transparent 35%
+    ),
+    #080B12;
 }
+
 
 .header {
     display: flex;
@@ -23,35 +45,34 @@
 
 
 
-
-
 .nav {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     gap: 25px;
     padding: 15px;
+    background-color: var(--color-fondo-secundario);
 }
 
 .nav a {
     text-decoration: none;
-    color: black;
+    color: var(--color-texto);
     font-weight: 500;
 }
 
-.intro {
+.hero {
     height: 450px;
-    background: url("https://img.freepik.com/fotos-premium/codigo-binario-negro-verde-matriz-digital-futurista_971394-455.jpg?w=2000") center/cover;
+    background: url('media/Matrix\ Rain\ Codes.mp4') center/cover;
     display: flex;
     align-items: center;
     padding: 60px;
-    color: white;
+    color: var(--color-texto);
 }
 
-.intro-content {
+.hero-content {
     max-width: 500px;
 }
 
-.intro h1 {
+.hero h1 {
     font-size: 48px;
     margin-bottom: 10px;
 }
@@ -60,7 +81,7 @@
     display: inline-block;
     margin-top: 30px;   
     padding: 14px 28px;
-    background: #c62817;
+    background: #3e3e3e;
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -74,8 +95,8 @@
 }
 
 .offers {
-    background: #c62817;
-    color: white;
+    background: black;
+    color: yellow;
     padding: 50px;
     text-align: center;
 }
@@ -88,7 +109,7 @@
 }
 
 .card {
-    background: white;
+    background: #3e3e3e;
     color: black;
     padding: 15px;
     border-radius: 10px;

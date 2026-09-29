@@ -40,7 +40,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 15px 40px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid --color-borde;
 }
 
 
@@ -51,17 +51,18 @@
     gap: 25px;
     padding: 15px;
     background-color: var(--color-fondo-secundario);
+    
 }
 
 .nav a {
-    text-decoration: none;
+    text-decoration:none;
     color: var(--color-texto);
     font-weight: 500;
 }
 
 .hero {
     height: 450px;
-    background: url('media/Matrix\ Rain\ Codes.mp4') center/cover;
+    background: url("https://cdn-wcsm.alura.com.br/2025/04/banner.jpg") center/cover;
     display: flex;
     align-items: center;
     padding: 60px;
@@ -70,6 +71,7 @@
 
 .hero-content {
     max-width: 500px;
+    text-align: center;
 }
 
 .hero h1 {
@@ -77,26 +79,10 @@
     margin-bottom: 10px;
 }
 
-.btn-primary {
-    display: inline-block;
-    margin-top: 30px;   
-    padding: 14px 28px;
-    background: #3e3e3e;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    letter-spacing: 1px;
-    border-radius: 30px; 
-    transition: all 0.3s ease;
-}
-.btn-primary:hover {
-    background: black;
-    transform: translateY(-2px);
-}
 
 .offers {
-    background: black;
-    color: yellow;
+    background: var(--gradient-background);
+    color: var(--color-texto);
     padding: 50px;
     text-align: center;
 }
@@ -109,8 +95,8 @@
 }
 
 .card {
-    background: #3e3e3e;
-    color: black;
+    background: var(--color-fondo-secundario);
+    color: var(--color-texto-secundario);
     padding: 15px;
     border-radius: 10px;
     position: relative;
@@ -125,19 +111,20 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    background: red;
-    color: white;
+    background: var(--color-acento);
+    color: var(--color-texto);
     padding: 5px 8px;
     font-size: 12px;
     border-radius: 5px;
 }
 
 .badge.new {
-    background: blue;
+    background: var(--color-acento);
+    
 }
 
 .price {
-    color: red;
+    color: var(--color-texto-secundario);
     margin: 10px 0;
 }
 
@@ -165,4 +152,5 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    color: var(--color-texto-secundario);
 }

@@ -1,92 +1,300 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Airmon shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airmon Industries</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo" aria-label="Ir a la página de inicio">
+                <span class="logo-text">Airmon Industries</span>
+            </a>
+            <nav class="nav" aria-label="Navegador por defecto">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link nav-link--active"> 
+                            Inicio 
+                        </a>
+                    </li>
 
+                    <li class="nav-item">
+                        <a href="productos.html" class="nav-link"> 
+                            Tienda 
+                        </a>
+                    </li>
 
-<header>
-     <div class="icons">
-    </div>
-</header>
+                    <li class="nav-item">
+                        <a href="#categorias" class="nav-link"> 
+                            Categorias 
+                        </a>
+                    </li>
 
-<nav class="nav">
-    <a href="shop.html">Pruducts</a>
-    <a href="shop.html">Categories</a>
-</nav>
+                     <li class="nav-item">
+                        <a href="#nosotros" class="nav-link"> 
+                            Nosotros 
+                        </a>
+                    </li>
 
-<section class="hero">
-    <div class="hero-content">
-        <h1>Airmon Shop</h1>
-        <p>LLeva tus conocimientos de hacking a otro nivel</p>
-    </div>
-</section>
+                    <li class="nav-item">
+                        <a href="#contacto" class="nav-link"> 
+                            Contacto 
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button
+                    type="button"
+                    class="header-button"
+                    aria-label="Buscar"
+                    id="search-button"
+                >
+                    Buscar
+                </button>
+                <a
+                 href="login.html"
+                 class="header-button"
+                 aria-label="Mi cuenta"
+                >
+                    Login
+                </a>
+                <a
+                 href="carrito.html"
+                 class="header-button cart-button"
+                 aria-label="Carito de compra"
+                >
+                    Carrito
+                    <span class="cart-button__count">0</span>
+                </a>
 
-<section class="offers">
-    <h2> best offers</h2>
-    <p>¡incredible discounts!</p>
+                <button
+                    type="button"
+                    class="menu-button"
+                    aria-label="Abrir menu"
+                    id="menu-button"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
 
-    <div class="products">
-        <div class="card">
-            <span class="badge">-32%</span>
-            <h4>Raspberry Pi 4</h4>
-            <h3>External mini-computer</h3>
-            <p class="price">60€ <span>99€</span></p>
+            </div>
+        </div>
+        <div class="search-bar" id="search-bar" hidden>
+            <div class="container">
+                <form action="productos.html" class="search-form" method="get">
+                    <label for="search-input" class="sr-only">
+                        Buscar productos
+                    </label>
+                    <input type="search" name="q" id="search-input" autocomplete="off" placeholder="¿Que estas buscando?">
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
         </div>
 
-        <div class="card">
-            <span class="badge">-25%</span>
-            <h4>Esp 32</h4>
-            <h3>Take the Future</h3>
-            <p class="price">85€ <span>120€</span></p>
+        
+
+    </header>
+
+
+    <main>
+        <section class="hero">
+            <div class="container-hero">
+                <div class="hero-content">
+                    <span class="hero-eyebrow">
+                        Nueva colección
+                    </span>
+                    <h1 class="hero-title">
+                        Todolo que buscas, 
+                        <span>en el mismo sitio</span>
+                    </h1>
+                    <p class="hero-description">
+                        Descubre nustro catalogo de productos de hacking y sus respectivos cursos para potenciar sus utilidades.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="productos.html" class="hero-button-primary">Comprar ahora</a>
+                        <a href="#destacados" class="hero-button-secondary">Ver destacados</a>
+                    </div>
+                    <div class="hero-image">
+                        <img src="img/hero.jpg" alt="Seleccion de productos de nuestra tienda">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="categories-section" id="categories">
+            <div class="categories-header">
+                <span class="section-header-eyebrow">
+                    Descubre
+                </span>
             
-        </div>
-    </div>
+            <h2 class="section-header-title">
+                Explora nusetras categorías
+            </h2>
+            <p class="section-header-description">
+                Encuentra exactamente las herramientas que buscas
+            </p>
+            </div>
+            <div class="categories-grid">
+                <a href="productos.html?categoria=novedades" class="categry-card">
+                    <div class="category-card-image">
+                        <img src="img/categoria-novedades.jpg" alt="Novedades" loading="lazy">
 
-    <section class="featured">
-    <div class="section-title">
-        <h2>Productos Destacados</h2>
-        <a href="#">Ver todos</a>
-    </div>
+                    </div>
 
-    <div class="products">
-        <div class="card">
-            <span class="badge">-32%</span>
-            <h4></h4>
-            <h3></h3>
-            <p class="price">129.99€ <span>189.99€</span></p>
-            <button>Añadir al Carrito</button>
-        </div>
+                    <div class="category-card-content">
+                        <h3>Novedades</h3>
+                        <span>Descubrir</span>
+                    </div>
+                </a>
+                <a href="productos.html?categoria=destacados" class="categry-card">
+                    <div class="category-card-image">
+                        <img src="img/categoria-novedades.jpg" alt="Novedades" loading="lazy">
 
-        <div class="card">
-            <span class="badge new">Nuevo</span>
-            
-            <h4></h4>
-            <h3></h3>
-            <p class="price">159.99€</p>
-            <button>Añadir al Carrito</button>
-        </div>
+                    </div>
 
-        <div class="card">
-            <span class="badge">-25%</span>
-            
-            <h4></h4>
-            <h3></h3>
-            <p class="price">149.99€ <span>199.99€</span></p>
-            <button>Añadir al Carrito</button>
-        </div>
+                    <div class="category-card-content">
+                        <h3>Novedades</h3>
+                        <span>Descubrir</span>
+                    </div>
+                </a>
+                <a href="productos.html?categoria=destacados" class="categry-card">
+                    <div class="category-card-image">
+                        <img src="img/categoria-novedades.jpg" alt="Novedades" loading="lazy">
 
-        <div class="card">
-            <span class="badge new">Nuevo</span>
-            
-            <h4></h4>
-            <h3></h3>
-            <p class="price">89.99€</p>
-            <button>Añadir al Carrito</button>
-        </div>
-    </div>
-</section>
-</section>
+                    </div>
+
+                    <div class="category-card-content">
+                        <h3>Novedades</h3>
+                        <span>Descubrir</span>
+                    </div>
+                </a>
+                <a href="productos.html?categoria=destacados" class="categry-card">
+                    <div class="category-card-image">
+                        <img src="img/categoria-novedades.jpg" alt="Novedades" loading="lazy">
+
+                    </div>
+
+                    <div class="category-card-content">
+                        <h3>Novedades</h3>
+                        <span>Descubrir</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="featured-section" id="destacados">
+            <div class="section-header--row">
+                <div>
+                    <span class="section-header-eyebrow">
+                        Nuestra seleccion
+                    </span>
+                    <h2 class="section-header-title"> productos destacados</h2>
+                   
+                </div>
+                <a href="productos.html" class="section-header--link">
+                    Ver todos
+                </a>
+            </div>
+
+            <div class="products-grid">
+                <article class="product-card">
+                    <a href="producto.html?id=1" class="product-card-image">
+                        <span class="product-card--badge">Nuevo</span>
+                        <img src="img/producto-1.jpg" alt="Producto 1" loading="lazy">
+                    </a>
+                    <div class="product-card--content">
+                        <span class="product-card--category">
+                            Categoria
+                        </span>
+                        <h3 class="product-card--title">
+                            <a href="producto.html?id=1">Producto 1</a>
+                        </h3>
+                        <div class="product-card--bottom">
+                            <span class="product-card--price">30€</span>
+                            <button type="button" class="button-card--add" data-product-id="1" aria-label="Añadir Producto 1 al carrito"> + </button>
+                        </div>
+                        
+
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <a href="producto.html?id=2" class="product-card-image">
+                        <span class="product-card--badge">Nuevo</span>
+                        <img src="img/producto-2.jpg" alt="Producto 2" loading="lazy">
+                    </a>
+                    <div class="product-card--content">
+                        <span class="product-card--category">
+                            Categoria
+                        </span>
+                        <h3 class="product-card--title">
+                            <a href="producto.html?id=2">Producto 2</a>
+                        </h3>
+                        <div class="product-card--bottom">
+                            <span class="product-card--price">30€</span>
+                            <button type="button" class="button-card--add" data-product-id="2" aria-label="Añadir Producto 2 al carrito"> + </button>
+                        </div>
+                        
+
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <a href="producto.html?id=3" class="product-card-image">
+                        <span class="product-card--badge">Nuevo</span>
+                        <img src="img/producto-3.jpg" alt="Producto 3" loading="lazy">
+                    </a>
+                    <div class="product-card--content">
+                        <span class="product-card--category">
+                            Categoria
+                        </span>
+                        <h3 class="product-card--title">
+                            <a href="producto.html?id=3">Producto 3</a>
+                        </h3>
+                        <div class="product-card--bottom">
+                            <span class="product-card--price">30€</span>
+                            <button type="button" class="button-card--add" data-product-id="3" aria-label="Añadir Producto 3 al carrito"> + </button>
+                        </div>
+
+
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="promo">
+            <div class="container">
+                <div class="promo-content">
+                    <div>
+                        <span class="promo-eyebrow">
+                            Oferta especial
+                        </span>
+                        <h2 class="promo-title">
+                            Hasta un 20% de descuento
+                        </h2>
+                        <p class="promo-description">
+                            Aprovecha las ofertas de tiempo limitado.
+                        </p>
+                        <a href="productos.html?oferta=true" class="button-light">Ver ofertas</a>
+
+                    </div>
+                    <div class="promo-image">
+                        <img src="img/banner-promciomal.jpg" alt="Promocion especial" loading="lazy">
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+        <section class="benefits-section">
+            <div class="container">
+                <div class="benefits-grid">
+                    <div class="benefits">
+                        <div class="benefit-icon"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

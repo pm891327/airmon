@@ -31,7 +31,7 @@ El proyecto también contempla el diseño y la simulación de la infraestructura
 
 ## Tecnologías
 
-- Frontend: HTML y [CSS/JavaScript, si se utilizan].
+- Frontend: HTML y CSS JavaScript.
 - Base de datos: [Indicar tecnología real].
 - Backend: [Por definir o indicar tecnología elegida].
 - Simulación de red: [Packet Tracer o GNS3, por decidir].

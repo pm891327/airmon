@@ -1516,3 +1516,8 @@ input:focus-visible {
     align-items: flex-start;
     line-height: 1.6;
 }
+
+.register-terms input {
+    margin-top: 4px;
+    flex-shrink: 0;
+}

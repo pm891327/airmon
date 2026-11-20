@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nosotros | Airmon Industries</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <meta name="description" content="Conoce Airmon Industries, nuestra manera de trabajar, nuestro objetivo y compromiso con la tecnologia ">
+</head>
+<body class="about-page">
+    <header class="header">
+         <div class="header-container">
+            <a href="index.html" class="logo" aria-label="Ir a la página de inicio">
+                <span class="logo-text">Airmon Industries</span>
+            </a>
+            <nav class="nav" aria-label="Navegador por defecto">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link nav-link--active"> 
+                            Inicio 
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="productos.html" class="nav-link"> 
+                            Tienda 
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#categorias" class="nav-link"> 
+                            Categorias 
+                        </a>
+                    </li>
+
+                     <li class="nav-item">
+                        <a href="#nosotros" class="nav-link"> 
+                            Nosotros 
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#contacto" class="nav-link"> 
+                            Contacto 
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button
+                    type="button"
+                    class="header-button"
+                    aria-label="Buscar"
+                    id="search-button"
+                >
+                    Buscar
+                </button>
+                <a
+                 href="login.html"
+                 class="header-button"
+                 aria-label="Mi cuenta"
+                >
+                    Login
+                </a>
+                <a
+                 href="carrito.html"
+                 class="header-button cart-button"
+                 aria-label="Carito de compra"
+                >
+                    Carrito
+                    <span class="cart-button__count">0</span>
+                </a>
+
+                <button
+                    type="button"
+                    class="menu-button"
+                    aria-label="Abrir menu"
+                    id="menu-button"
+                    aria-expanded="false"
+                >
+                    ☰
+                </button>
+
+            </div>
+        </div>
+        <div class="search-bar" id="search-bar" hidden>
+            <div class="container">
+                <form action="productos.html" class="search-form" method="get">
+                    <label for="search-input" class="sr-only">
+                        Buscar productos
+                    </label>
+                    <input type="search" name="q" id="search-input" autocomplete="off" placeholder="¿Que estas buscando?">
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="about-hero"> 
+            <div class="about-hero-background"></div>
+            <div class="about-container about-hero-container">
+                <span class="about-eyebrow">
+                    CONOCE AIRMON INDUSTRIES
+                </span>
+                <h1>El hacking etico es el futuro <span>Nosotros queremos formar partre de el</span></h1>
+                <p>ofrecemos una venta de gadgets de hacking y el conocimiento para el uso correcto de estos </p>
+                <div class="about-hero-actions">
+                    <a href="#who-we-are" class="about-primary-button">Descubre nuestra historia</a>
+                    <a href="index.html" class="about-primary-button">Explorar tienda</a>
+
+                </div>
+            </div>
+            <div class="about-hero-decoration">
+                <span>INNOVACIÓN</span>
+                <span>CONOCIMIENTO</span>
+                <span>HACKING ÉTICO</span>
+            </div>
+        </section>
+        <section class="about-who" id="who-we-are">
+            <div class="about-container about-two-columns"></div>
+        </section>
+    </main>
+</body>
+</html>

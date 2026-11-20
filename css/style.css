@@ -1511,3 +1511,8 @@ input:focus-visible {
         flex-wrap: wrap;
     }
 }
+
+.register-terms {
+    align-items: flex-start;
+    line-height: 1.6;
+}
